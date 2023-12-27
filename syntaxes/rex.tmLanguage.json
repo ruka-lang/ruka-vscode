@@ -55,7 +55,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.rex",
-				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|true|false|break|continue|and|or|else|as|when|any|use|const|let|mut|mov|loc|ctime)\\b"
+				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|true|false|break|continue|and|or|not|else|as|when|any|use|from|const|let|static|pub|mut|mov|loc|ctime)\\b"
 			}]
 		},
         "operators": {
