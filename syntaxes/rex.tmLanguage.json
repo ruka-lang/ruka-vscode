@@ -2,21 +2,66 @@
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
 	"name": "Rex",
 	"patterns": [
+        {
+            "include": "#comments"
+        },
 		{
 			"include": "#keywords"
 		},
+        {
+            "include": "#operators"
+        },
+        {
+            "include": "#constants"
+        },
 		{
 			"include": "#strings"
 		}
 	],
+    "foldingStartMarker": "{s*$",
+    "foldingEndMarker": "^s*}",
 	"repository": {
+        "comments": {
+            "name": "comment.rex",
+            "patterns": [
+                { "include": "#comment-line" },
+                { "include": "#comment-block-doc" },
+                { "include": "#comment-block" }
+            ]
+        },
+        "comment-line": {
+            "name": "comment.line.double-slash.rex",
+            "begin": "(^[ \\t]+)?((//))",
+            "end": "(?=^)"
+        },
+        "comment-block": {
+            "name": "comment.block.rex",
+            "begin": "/\\*",
+            "end": "\\*/",
+            "patterns": [
+                { "include": "#comment-block-doc" },
+                { "include": "#comment-block" }
+            ]
+        },
+        "comment-block-doc": {
+            "name": "comment.block.documentation.rex",
+            "begin": "/\\*\\*(?!/)",
+            "end": "\\*/",
+            "patterns": [
+                { "include": "#comment-block-doc" },
+                { "include": "#comment-block" }
+            ]
+        },
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.rex",
-				"match": "\\b(if|while|for|return)\\b"
+				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|true|false|break|continue|and|or|else|as|when|any|use|const|let|mut|mov|loc|ctime)\\b"
 			}]
 		},
         "operators": {
+
+        },
+        "constants": {
 
         },
 		"strings": {
