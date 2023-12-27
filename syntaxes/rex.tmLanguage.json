@@ -16,6 +16,9 @@
 				"match": "\\b(if|while|for|return)\\b"
 			}]
 		},
+        "operators": {
+
+        },
 		"strings": {
 			"name": "string.quoted.double.rex",
 			"begin": "\"",

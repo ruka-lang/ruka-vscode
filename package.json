@@ -1,6 +1,6 @@
 {
-  "name": "rex",
-  "displayName": "rex.vscode",
+  "name": "rex-vscode",
+  "displayName": "Rex Programming Language",
   "description": "Rex Programming Language",
   "version": "0.0.1",
   "homepage": "https://www.rexlang.org",
