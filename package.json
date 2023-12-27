@@ -1,0 +1,33 @@
+{
+  "name": "rex",
+  "displayName": "rex.vscode",
+  "description": "Rex Programming Language",
+  "version": "0.0.1",
+  "homepage": "https://www.rexlang.org",
+  "respository": {
+     "type": "git",
+     "url": "https://github.com/rexlang/rex.vscode"
+  },
+  "icon": "assets/rex.png",
+  "license": ["MIT", "APACHE"],
+  "publisher": "rexlang",
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "rex",
+      "aliases": ["Rex", "rex"],
+      "extensions": [".rx"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "rex",
+      "scopeName": "source.rex",
+      "path": "./syntaxes/rex.tmLanguage.json"
+    }]
+  }
+}
