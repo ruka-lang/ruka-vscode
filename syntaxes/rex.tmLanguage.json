@@ -59,10 +59,8 @@
 			}]
 		},
         "operators": {
-
         },
         "constants": {
-
         },
 		"strings": {
 			"name": "string.quoted.double.rex",
