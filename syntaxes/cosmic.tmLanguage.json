@@ -12,7 +12,7 @@
             "include": "#operators"
         },
         {
-            "include": "#constants"
+            "include": "#literals"
         },
 		{
 			"include": "#strings"
@@ -55,12 +55,99 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.cosmic",
-				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|true|false|break|continue|and|or|not|else|as|when|any|use|from|const|let|var|pub|pri|mut|mov|loc|ctime|static|in)\\b"
+				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|use|from|const|let|var|public|private|mut|mov|loc|ctime|static|in)\\b"
 			}]
 		},
         "operators": {
+            "patterns": [
+                { "include": "#operator-infix" },
+                { "include": "#operator-prefix" }
+            ]
         },
-        "constants": {
+        "operators-infix": {
+            "patterns": [
+                { 
+                    "name": "keyword.operator.cosmic",
+                    "match": ";"
+                },
+                { "include": "#operator-infix-assign" }
+            ]
+        },
+        "operator-infix-assign": {
+            "name": "keyword.operator.cosmic",
+            "match": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])(=)(?![#\\-:!?.@*/&%^+<=>|~$\\\\])"
+        },
+        "literals": {
+            "patterns": [
+                { "include": "#literal-boolean" },
+                { "include": "#literal-character" },
+                { "include": "#literal-numeric" },
+                { "include": "#literal-unit" }
+            ]
+        },
+        "literal-boolean": {
+            "name": "constant.language.cosmic constant.numeric.cosmic",
+            "match": "\\b(false|true)\\b"
+        },
+        "literal-character": {
+            "name": "constant.character.cosmic",
+            "match": "(')([[:space:]]|[[:graph:]]|\\\\[\\\\\"'ntbr]|\\\\[[:digit:]][[:digit:]][[:digit:]]|\\\\x[[:xdigit:]][[:xdigit:]]|\\\\o[0-3][0-7][0-7])(')"
+        },
+        "literal-numeric": {
+            "patterns": [
+                {
+                    "match": "([-])?([[:digit:]][_[:digit:]]*)(?:(\\.)([_[:digit:]]*))?(?:([eE])([\\-\\+])?([[:digit:]][_[:digit:]]*))?(?![bBoOxX])",
+                    "captures": {
+                        "1": { "name": "keyword.control.less" },
+                        "2": { "name": "constant.numeric" },
+                        "3": {
+                            "name": "variable.other.class.js variable.interpolation keyword.operator keyword.control message.error"
+                        },
+                        "4": { "name": "constant.numeric" },
+                        "5": { "name": "keyword.control.less" },
+                        "6": { "name": "keyword.control.less" },
+                        "7": { "name": "constant.numeric" }
+                    }
+                },
+                {
+                    "match": "([-])?(0[xX])([[:xdigit:]][_[:xdigit:]]*)(?:(\\.)([_[:xdigit:]]*))?(?:([pP])([\\-\\+])?([[:digit:]][_[:digit:]]*))?",
+                    "captures": {
+                        "1": { "name": "keyword.control.less" },
+                        "2": { "name": "keyword.control.less" },
+                        "3": { "name": "constant.numeric" },
+                        "4": {
+                            "name": "variable.other.class.js variable.interpolation keyword.operator keyword.control message.error"
+                        },
+                        "5": { "name": "constant.numeric" },
+                        "6": { "name": "keyword.control.less" },
+                        "7": { "name": "keyword.control.less" },
+                        "8": { "name": "constant.numeric" }
+                    }
+                },
+                {
+                    "match": "([-])?(0[oO])([0-7][_0-7]*)",
+                    "captures": {
+                        "1": { "name": "keyword.control.less" },
+                        "2": { "name": "keyword.control.less" },
+                        "3": { "name": "constant.numeric" }
+                    }
+                },
+                {
+                    "match": "([-])?(0[bB])([0-1][_0-1]*)",
+                    "captures": {
+                        "1": { "name": "keyword.control.less" },
+                        "2": { "name": "keyword.control.less" },
+                        "3": { "name": "constant.numeric" }
+                    }
+                }
+            ]
+        },
+        "literal-string": {
+
+        },
+        "literal-unit": {
+            "name": "constant.language.unit.cosmic",
+            "match": "\\(\\)"
         },
 		"strings": {
 			"name": "string.quoted.double.cosmic",
