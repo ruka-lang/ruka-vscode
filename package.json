@@ -1,16 +1,16 @@
 {
-  "name": "rex-vscode",
-  "displayName": "Rex Programming Language",
-  "description": "Rex Programming Language",
+  "name": "cosmic-vscode",
+  "displayName": "Cosmic Programming Language",
+  "description": "Cosmic Programming Language",
   "version": "0.0.1",
-  "homepage": "https://www.rexlang.org",
+  "homepage": "https://www.cosmic-lang.org",
   "respository": {
      "type": "git",
-     "url": "https://github.com/rexlang/rex.vscode"
+     "url": "https://github.com/cosmic-lang/cosmic-vscode"
   },
-  "icon": "assets/rex.png",
+  "icon": "assets/icon-transparent.png",
   "license": ["MIT", "APACHE"],
-  "publisher": "rexlang",
+  "publisher": "cosmic-lang",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -19,15 +19,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "rex",
-      "aliases": ["Rex", "rex"],
-      "extensions": [".rx"],
+      "id": "cosmic",
+      "aliases": ["Cosmic", "cosmic"],
+      "extensions": [".cosmic"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "rex",
-      "scopeName": "source.rex",
-      "path": "./syntaxes/rex.tmLanguage.json"
+      "language": "cosmic",
+      "scopeName": "source.cosmic",
+      "path": "./syntaxes/cosmic.tmLanguage.json"
     }]
   }
 }

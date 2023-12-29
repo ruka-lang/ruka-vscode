@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Rex",
+	"name": "Cosmic",
 	"patterns": [
         {
             "include": "#comments"
@@ -22,7 +22,7 @@
     "foldingEndMarker": "^s*}",
 	"repository": {
         "comments": {
-            "name": "comment.rex",
+            "name": "comment.cosmic",
             "patterns": [
                 { "include": "#comment-line" },
                 { "include": "#comment-block-doc" },
@@ -30,12 +30,12 @@
             ]
         },
         "comment-line": {
-            "name": "comment.line.double-slash.rex",
+            "name": "comment.line.double-slash.cosmic",
             "begin": "(^[ \\t]+)?((//))",
             "end": "(?=^)"
         },
         "comment-block": {
-            "name": "comment.block.rex",
+            "name": "comment.block.cosmic",
             "begin": "/\\*",
             "end": "\\*/",
             "patterns": [
@@ -44,7 +44,7 @@
             ]
         },
         "comment-block-doc": {
-            "name": "comment.block.documentation.rex",
+            "name": "comment.block.documentation.cosmic",
             "begin": "/\\*\\*(?!/)",
             "end": "\\*/",
             "patterns": [
@@ -54,7 +54,7 @@
         },
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.rex",
+				"name": "keyword.control.cosmic",
 				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|true|false|break|continue|and|or|not|else|as|when|any|use|from|const|let|var|pub|pri|mut|mov|loc|ctime|static|in)\\b"
 			}]
 		},
@@ -63,16 +63,16 @@
         "constants": {
         },
 		"strings": {
-			"name": "string.quoted.double.rex",
+			"name": "string.quoted.double.cosmic",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.rex",
+					"name": "constant.character.escape.cosmic",
 					"match": "\\\\."
 				}
 			]
 		}
 	},
-	"scopeName": "source.rex"
+	"scopeName": "source.cosmic"
 }
