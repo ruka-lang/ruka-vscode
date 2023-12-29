@@ -21,7 +21,7 @@
     "languages": [{
       "id": "cosmic",
       "aliases": ["Cosmic", "cosmic"],
-      "extensions": [".cosmic"],
+      "extensions": [".cosmic", ".co"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
