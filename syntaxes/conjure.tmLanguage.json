@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Cosmic",
+	"name": "Conjure",
 	"patterns": [
         {
             "include": "#comments"
@@ -22,7 +22,7 @@
     "foldingEndMarker": "^s*}",
 	"repository": {
         "comments": {
-            "name": "comment.cosmic",
+            "name": "comment.conjure",
             "patterns": [
                 { "include": "#comment-line" },
                 { "include": "#comment-block-doc" },
@@ -30,12 +30,12 @@
             ]
         },
         "comment-line": {
-            "name": "comment.line.double-slash.cosmic",
+            "name": "comment.line.double-slash.conjure",
             "begin": "(^[ \\t]+)?((//))",
             "end": "(?=^)"
         },
         "comment-block": {
-            "name": "comment.block.cosmic",
+            "name": "comment.block.conjure",
             "begin": "/\\*",
             "end": "\\*/",
             "patterns": [
@@ -44,7 +44,7 @@
             ]
         },
         "comment-block-doc": {
-            "name": "comment.block.documentation.cosmic",
+            "name": "comment.block.documentation.conjure",
             "begin": "/\\*\\*(?!/)",
             "end": "\\*/",
             "patterns": [
@@ -54,7 +54,7 @@
         },
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.cosmic",
+				"name": "keyword.control.conjure",
 				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|use|from|const|let|var|public|private|mut|mov|loc|comptime|static|in)\\b"
 			}]
 		},
@@ -67,14 +67,14 @@
         "operators-infix": {
             "patterns": [
                 { 
-                    "name": "keyword.operator.cosmic",
+                    "name": "keyword.operator.conjure",
                     "match": ";"
                 },
                 { "include": "#operator-infix-assign" }
             ]
         },
         "operator-infix-assign": {
-            "name": "keyword.operator.cosmic",
+            "name": "keyword.operator.conjure",
             "match": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])(=)(?![#\\-:!?.@*/&%^+<=>|~$\\\\])"
         },
         "literals": {
@@ -86,11 +86,11 @@
             ]
         },
         "literal-boolean": {
-            "name": "constant.language.cosmic constant.numeric.cosmic",
+            "name": "constant.language.conjure constant.numeric.conjure",
             "match": "\\b(false|true)\\b"
         },
         "literal-character": {
-            "name": "constant.character.cosmic",
+            "name": "constant.character.conjure",
             "match": "(')([[:space:]]|[[:graph:]]|\\\\[\\\\\"'ntbr]|\\\\[[:digit:]][[:digit:]][[:digit:]]|\\\\x[[:xdigit:]][[:xdigit:]]|\\\\o[0-3][0-7][0-7])(')"
         },
         "literal-numeric": {
@@ -146,20 +146,20 @@
 
         },
         "literal-unit": {
-            "name": "constant.language.unit.cosmic",
+            "name": "constant.language.unit.conjure",
             "match": "\\(\\)"
         },
 		"strings": {
-			"name": "string.quoted.double.cosmic",
+			"name": "string.quoted.double.conjure",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.cosmic",
+					"name": "constant.character.escape.conjure",
 					"match": "\\\\."
 				}
 			]
 		}
 	},
-	"scopeName": "source.cosmic"
+	"scopeName": "source.conjure"
 }

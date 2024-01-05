@@ -1,16 +1,16 @@
 {
-  "name": "cosmic-vscode",
-  "displayName": "Cosmic Programming Language",
-  "description": "Cosmic Programming Language",
+  "name": "conjure-vscode",
+  "displayName": "Conjure Programming Language",
+  "description": "Conjure Programming Language",
   "version": "0.0.1",
-  "homepage": "https://www.cosmic-lang.org",
+  "homepage": "https://www.conjure-lang.org",
   "respository": {
      "type": "git",
-     "url": "https://github.com/cosmic-lang/cosmic-vscode"
+     "url": "https://github.com/conjure-lang/conjure-vscode"
   },
-  "icon": "assets/icon-transparent.png",
+  "icon": "assets/branding/png/conjure-transparent-main-icon-2.png",
   "license": ["MIT", "APACHE"],
-  "publisher": "cosmic-lang",
+  "publisher": "conjure-lang",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -19,15 +19,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "cosmic",
-      "aliases": ["Cosmic", "cosmic"],
-      "extensions": [".cosmic", ".co"],
+      "id": "conjure",
+      "aliases": ["Conjure", "conjure"],
+      "extensions": [".conjure", ".cj"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "cosmic",
-      "scopeName": "source.cosmic",
-      "path": "./syntaxes/cosmic.tmLanguage.json"
+      "language": "conjure",
+      "scopeName": "source.conjure",
+      "path": "./syntaxes/conjure.tmLanguage.json"
     }]
   }
 }
