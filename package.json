@@ -21,7 +21,7 @@
     "languages": [{
       "id": "conjure",
       "aliases": ["Conjure", "conjure"],
-      "extensions": [".conjure", ".cj"],
+      "extensions": [".conjure", ".cnj"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
