@@ -1,6 +1,6 @@
-# conjure README
+# ghoose README
 
-This is the README for your extension "conjure". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "ghoose". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
