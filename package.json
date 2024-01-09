@@ -8,7 +8,7 @@
      "type": "git",
      "url": "https://github.com/conjure-lang/conjure-vscode"
   },
-  "icon": "assets/conjure-main-transparent-icon-3.png",
+  "icon": "assets/conjure-main-transparent-icon-2.png",
   "license": ["MIT", "APACHE"],
   "publisher": "conjure-lang",
   "engines": {
