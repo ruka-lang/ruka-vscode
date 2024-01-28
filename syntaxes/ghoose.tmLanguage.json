@@ -55,7 +55,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.ghoose",
-				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|from|const|let|var|public|private|mut|mov|loc|comptime|static|in|use)\\b"
+				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|const|let|rec|pub|pri|mut|mov|loc|comptime|static|in|use)\\b"
 			}]
 		},
         "operators": {
@@ -67,15 +67,27 @@
         "operators-infix": {
             "patterns": [
                 { 
-                    "name": "keyword.operator.ghoose",
+                    "name": "keyword.operator.infix.ghoose",
                     "match": ";"
                 },
-                { "include": "#operator-infix-assign" }
+                { "include": "#operators-infix-assign"}
             ]
         },
-        "operator-infix-assign": {
-            "name": "keyword.operator.ghoose",
-            "match": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])(=)(?![#\\-:!?.@*/&%^+<=>|~$\\\\])"
+        "operators-infix-assign": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.infix.assign.ghoose",
+                    "match": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])(=)(?![#\\-:!?.@*/&%^+<=>|~$\\\\])"
+                }
+            ]
+        },
+        "operators-prefix": {
+            "patterns": [
+                {
+                    "name": "keyword.operator.prefix.ghoose",
+                    "match": ""
+                }
+            ]
         },
         "literals": {
             "patterns": [
