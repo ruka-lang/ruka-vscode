@@ -1,16 +1,16 @@
 {
-  "name": "ghoose-vscode",
-  "displayName": "Ghoose Programming Language",
-  "description": "Ghoose Programming Language",
+  "name": "amulet-vsc",
+  "displayName": "Amulet Programming Language",
+  "description": "Amulet Programming Language",
   "version": "0.0.1",
-  "homepage": "https://www.ghoose-lang.org",
+  "homepage": "https://www.amulet-lang.org",
   "respository": {
      "type": "git",
-     "url": "https://github.com/ghoose-lang/ghoose-vscode"
+     "url": "https://github.com/amulet-lang/amulet-vsc"
   },
-  "icon": "assets/ghoose-main-transparent-icon.png",
+  "icon": "assets/amulet-main-transparent-icon.png",
   "license": ["MIT", "APACHE"],
-  "publisher": "ghoose-lang",
+  "publisher": "amulet-lang",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -19,15 +19,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "ghoose",
-      "aliases": ["Ghoose", "ghoose"],
-      "extensions": [".ghoose", ".gh"],
+      "id": "amulet",
+      "aliases": ["Amulet", "amulet"],
+      "extensions": [".amulet", ".amu"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "ghoose",
-      "scopeName": "source.ghoose",
-      "path": "./syntaxes/ghoose.tmLanguage.json"
+      "language": "amulet",
+      "scopeName": "source.amulet",
+      "path": "./syntaxes/amulet.tmLanguage.json"
     }]
   }
 }

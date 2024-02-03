@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Ghoose",
+	"name": "Amulet",
 	"patterns": [
         {
             "include": "#comments"
@@ -22,7 +22,7 @@
     "foldingEndMarker": "^s*}",
 	"repository": {
         "comments": {
-            "name": "comment.ghoose",
+            "name": "comment.amulet",
             "patterns": [
                 { "include": "#comment-line" },
                 { "include": "#comment-block-doc" },
@@ -30,12 +30,12 @@
             ]
         },
         "comment-line": {
-            "name": "comment.line.double-slash.ghoose",
+            "name": "comment.line.double-slash.amulet",
             "begin": "(^[ \\t]+)?((//))",
             "end": "(?=^)"
         },
         "comment-block": {
-            "name": "comment.block.ghoose",
+            "name": "comment.block.amulet",
             "begin": "/\\*",
             "end": "\\*/",
             "patterns": [
@@ -44,7 +44,7 @@
             ]
         },
         "comment-block-doc": {
-            "name": "comment.block.documentation.ghoose",
+            "name": "comment.block.documentation.amulet",
             "begin": "/\\*\\*(?!/)",
             "end": "\\*/",
             "patterns": [
@@ -54,7 +54,7 @@
         },
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.ghoose",
+				"name": "keyword.control.amulet",
 				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|const|let|rec|pub|pri|mut|mov|loc|comptime|static|in|use)\\b"
 			}]
 		},
@@ -67,7 +67,7 @@
         "operators-infix": {
             "patterns": [
                 { 
-                    "name": "keyword.operator.infix.ghoose",
+                    "name": "keyword.operator.infix.amulet",
                     "match": ";"
                 },
                 { "include": "#operators-infix-assign"}
@@ -76,7 +76,7 @@
         "operators-infix-assign": {
             "patterns": [
                 {
-                    "name": "keyword.operator.infix.assign.ghoose",
+                    "name": "keyword.operator.infix.assign.amulet",
                     "match": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])(=)(?![#\\-:!?.@*/&%^+<=>|~$\\\\])"
                 }
             ]
@@ -84,7 +84,7 @@
         "operators-prefix": {
             "patterns": [
                 {
-                    "name": "keyword.operator.prefix.ghoose",
+                    "name": "keyword.operator.prefix.amulet",
                     "match": ""
                 }
             ]
@@ -98,11 +98,11 @@
             ]
         },
         "literal-boolean": {
-            "name": "constant.language.ghoose constant.numeric.ghoose",
+            "name": "constant.language.amulet constant.numeric.amulet",
             "match": "\\b(false|true)\\b"
         },
         "literal-character": {
-            "name": "constant.character.ghoose",
+            "name": "constant.character.amulet",
             "match": "(')([[:space:]]|[[:graph:]]|\\\\[\\\\\"'ntbr]|\\\\[[:digit:]][[:digit:]][[:digit:]]|\\\\x[[:xdigit:]][[:xdigit:]]|\\\\o[0-3][0-7][0-7])(')"
         },
         "literal-numeric": {
@@ -158,20 +158,20 @@
 
         },
         "literal-unit": {
-            "name": "constant.language.unit.ghoose",
+            "name": "constant.language.unit.amulet",
             "match": "\\(\\)"
         },
 		"strings": {
-			"name": "string.quoted.double.ghoose",
+			"name": "string.quoted.double.amulet",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.ghoose",
+					"name": "constant.character.escape.amulet",
 					"match": "\\\\."
 				}
 			]
 		}
 	},
-	"scopeName": "source.ghoose"
+	"scopeName": "source.amulet"
 }
