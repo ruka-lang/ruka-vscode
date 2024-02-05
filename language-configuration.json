@@ -4,11 +4,14 @@
         "lineComment": "//",
         // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
         "blockComment": [ "/*", "*/" ],
-        "docComment": [ "/**", "*/" ]
+        "docComment": [ "/**", "*/" ],
+        "modComment": [ "/!*", "*/" ]
     },
     // symbols used as brackets
     "brackets": [
         ["do", "end"],
+        ["do", "else"],
+        ["do", "else if"],
         ["begin", "end"],
         ["{", "}"],
         ["[", "]"],
@@ -16,7 +19,6 @@
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
-        ["do", "end"],
         ["begin", "end"],
         ["{", "}"],
         ["[", "]"],
@@ -28,6 +30,8 @@
     // symbols that can be used to surround a selection
     "surroundingPairs": [
         ["do", "end"],
+        ["do", "else"],
+        ["do", "else if"],
         ["begin", "end"],
         ["{", "}"],
         ["[", "]"],
