@@ -1,16 +1,16 @@
 {
-  "name": "amulet-vsc",
+  "name": "warp-vscode",
   "displayName": "Amulet Programming Language",
   "description": "Amulet Programming Language",
   "version": "0.0.1",
-  "homepage": "https://www.amulet-lang.org",
+  "homepage": "https://www.warp-lang.org",
   "respository": {
      "type": "git",
-     "url": "https://github.com/amulet-lang/amulet-vsc"
+     "url": "https://github.com/warp-lang/warp-vscode"
   },
-  "icon": "assets/amulet-main-transparent-icon.png",
+  "icon": "assets/warp-main-transparent-icon.png",
   "license": ["MIT", "APACHE"],
-  "publisher": "amulet-lang",
+  "publisher": "warp-lang",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -19,15 +19,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "amulet",
-      "aliases": ["Amulet", "amulet"],
-      "extensions": [".amulet", ".amu"],
+      "id": "warp",
+      "aliases": ["Warp", "warp"],
+      "extensions": [".warp", ".wr"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "amulet",
-      "scopeName": "source.amulet",
-      "path": "./syntaxes/amulet.tmLanguage.json"
+      "language": "warp",
+      "scopeName": "source.warp",
+      "path": "./syntaxes/warp.tmLanguage.json"
     }]
   }
 }
