@@ -1,7 +1,7 @@
 {
   "name": "warp-vscode",
-  "displayName": "Amulet Programming Language",
-  "description": "Amulet Programming Language",
+  "displayName": "Warp Programming Language",
+  "description": "Warp Programming Language",
   "version": "0.0.1",
   "homepage": "https://www.warp-lang.org",
   "respository": {
