@@ -55,7 +55,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.warp",
-				"match": "\\b(if|match|while|for|return|fn|record|union|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|const|let|rec|pub|pri|mut|mov|loc|comptime|static|in|use)\\b"
+				"match": "\\b(if|match|while|for|return|fn|record|union|derive|macro|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|const|let|rec|pub|pri|mut|mov|loc|comptime|static|in|use|impl)\\b"
 			}]
 		},
         "operators": {
