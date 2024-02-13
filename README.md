@@ -1,6 +1,6 @@
-# amulet README
+# warp README
 
-This is the README for your extension "amulet". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "warp". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 
