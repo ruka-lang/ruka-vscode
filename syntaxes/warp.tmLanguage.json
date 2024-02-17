@@ -26,6 +26,7 @@
             "patterns": [
                 { "include": "#comment-line" },
                 { "include": "#comment-block-doc" },
+                { "include": "#comment-block-module-doc" },
                 { "include": "#comment-block" }
             ]
         },
@@ -45,7 +46,16 @@
         },
         "comment-block-doc": {
             "name": "comment.block.documentation.warp",
-            "begin": "/\\*\\*(?!/)",
+            "begin": "/\\*\\*",
+            "end": "\\*/",
+            "patterns": [
+                { "include": "#comment-block-doc" },
+                { "include": "#comment-block" }
+            ]
+        },
+        "comment-block-module-doc": {
+            "name": "comment.block.module.documentation.warp",
+            "begin": "/\\!\\*",
             "end": "\\*/",
             "patterns": [
                 { "include": "#comment-block-doc" },
@@ -55,7 +65,7 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.warp",
-				"match": "\\b(if|match|while|for|return|fn|record|union|derive|macro|trait|module|defer|inline|break|continue|and|or|not|else|as|when|any|const|let|rec|pub|pri|mut|mov|loc|comptime|static|in|use|impl)\\b"
+				"match": "\\b(if|match|error|while|for|return|fn|record|union|derive|macro|trait|module|defer|inline|break|continue|and|or|not|else|else if|as|when|any|const|let|rec|pub|mut|mov|loc|comptime|static|in|use|impl)\\b"
 			}]
 		},
         "operators": {

@@ -10,16 +10,12 @@
     // symbols used as brackets
     "brackets": [
         ["do", "end"],
-        ["do", "else"],
-        ["do", "else if"],
-        ["begin", "end"],
         ["{", "}"],
         ["[", "]"],
         ["(", ")"]
     ],
     // symbols that are auto closed when typing
     "autoClosingPairs": [
-        ["begin", "end"],
         ["{", "}"],
         ["[", "]"],
         ["(", ")"],
