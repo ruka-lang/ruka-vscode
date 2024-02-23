@@ -1,16 +1,16 @@
 {
-  "name": "warp-vscode",
+  "name": "ruka-vscode",
   "displayName": "Warp Programming Language",
   "description": "Warp Programming Language",
   "version": "0.0.1",
-  "homepage": "https://www.warp-lang.org",
+  "homepage": "https://www.ruka-lang.org",
   "respository": {
      "type": "git",
-     "url": "https://github.com/warp-lang/warp-vscode"
+     "url": "https://github.com/ruka-lang/ruka-vscode"
   },
-  "icon": "assets/warp-main-transparent-icon.png",
+  "icon": "assets/ruka-main-transparent-icon.png",
   "license": ["MIT", "APACHE"],
-  "publisher": "warp-lang",
+  "publisher": "ruka-lang",
   "engines": {
     "vscode": "^1.85.0"
   },
@@ -19,15 +19,15 @@
   ],
   "contributes": {
     "languages": [{
-      "id": "warp",
-      "aliases": ["Warp", "warp"],
-      "extensions": [".warp", ".wr"],
+      "id": "ruka",
+      "aliases": ["Ruka", "ruka"],
+      "extensions": [".ruka", ".rk"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
-      "language": "warp",
-      "scopeName": "source.warp",
-      "path": "./syntaxes/warp.tmLanguage.json"
+      "language": "ruka",
+      "scopeName": "source.ruka",
+      "path": "./syntaxes/ruka.tmLanguage.json"
     }]
   }
 }

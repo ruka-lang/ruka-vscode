@@ -1,6 +1,6 @@
-# warp README
+# ruka README
 
-This is the README for your extension "warp". After writing up a brief description, we recommend including the following sections.
+This is the README for your extension "ruka". After writing up a brief description, we recommend including the following sections.
 
 ## Features
 

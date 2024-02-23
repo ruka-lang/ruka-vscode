@@ -1,6 +1,6 @@
 {
 	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "Warp",
+	"name": "Ruka",
 	"patterns": [
         {
             "include": "#comments"
@@ -22,7 +22,7 @@
     "foldingEndMarker": "^s*}",
 	"repository": {
         "comments": {
-            "name": "comment.warp",
+            "name": "comment.ruka",
             "patterns": [
                 { "include": "#comment-line" },
                 { "include": "#comment-block-doc" },
@@ -31,12 +31,12 @@
             ]
         },
         "comment-line": {
-            "name": "comment.line.double-slash.warp",
+            "name": "comment.line.double-slash.ruka",
             "begin": "(^[ \\t]+)?((//))",
             "end": "(?=^)"
         },
         "comment-block": {
-            "name": "comment.block.warp",
+            "name": "comment.block.ruka",
             "begin": "/\\*",
             "end": "\\*/",
             "patterns": [
@@ -45,7 +45,7 @@
             ]
         },
         "comment-block-doc": {
-            "name": "comment.block.documentation.warp",
+            "name": "comment.block.documentation.ruka",
             "begin": "/\\*\\*",
             "end": "\\*/",
             "patterns": [
@@ -54,7 +54,7 @@
             ]
         },
         "comment-block-module-doc": {
-            "name": "comment.block.module.documentation.warp",
+            "name": "comment.block.module.documentation.ruka",
             "begin": "/\\!\\*",
             "end": "\\*/",
             "patterns": [
@@ -64,7 +64,7 @@
         },
 		"keywords": {
 			"patterns": [{
-				"name": "keyword.control.warp",
+				"name": "keyword.control.ruka",
 				"match": "\\b(if|match|error|while|for|return|fn|record|union|derive|macro|trait|module|defer|inline|break|continue|and|or|not|else|else if|as|when|any|const|let|rec|pub|mut|mov|loc|comptime|static|in|use|impl)\\b"
 			}]
 		},
@@ -77,7 +77,7 @@
         "operators-infix": {
             "patterns": [
                 { 
-                    "name": "keyword.operator.infix.warp",
+                    "name": "keyword.operator.infix.ruka",
                     "match": ";"
                 },
                 { "include": "#operators-infix-assign"}
@@ -86,7 +86,7 @@
         "operators-infix-assign": {
             "patterns": [
                 {
-                    "name": "keyword.operator.infix.assign.warp",
+                    "name": "keyword.operator.infix.assign.ruka",
                     "match": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])(=)(?![#\\-:!?.@*/&%^+<=>|~$\\\\])"
                 }
             ]
@@ -94,7 +94,7 @@
         "operators-prefix": {
             "patterns": [
                 {
-                    "name": "keyword.operator.prefix.warp",
+                    "name": "keyword.operator.prefix.ruka",
                     "match": ""
                 }
             ]
@@ -108,11 +108,11 @@
             ]
         },
         "literal-boolean": {
-            "name": "constant.language.warp constant.numeric.warp",
+            "name": "constant.language.ruka constant.numeric.ruka",
             "match": "\\b(false|true)\\b"
         },
         "literal-character": {
-            "name": "constant.character.warp",
+            "name": "constant.character.ruka",
             "match": "(')([[:space:]]|[[:graph:]]|\\\\[\\\\\"'ntbr]|\\\\[[:digit:]][[:digit:]][[:digit:]]|\\\\x[[:xdigit:]][[:xdigit:]]|\\\\o[0-3][0-7][0-7])(')"
         },
         "literal-numeric": {
@@ -168,20 +168,20 @@
 
         },
         "literal-unit": {
-            "name": "constant.language.unit.warp",
+            "name": "constant.language.unit.ruka",
             "match": "\\(\\)"
         },
 		"strings": {
-			"name": "string.quoted.double.warp",
+			"name": "string.quoted.double.ruka",
 			"begin": "\"",
 			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.warp",
+					"name": "constant.character.escape.ruka",
 					"match": "\\\\."
 				}
 			]
 		}
 	},
-	"scopeName": "source.warp"
+	"scopeName": "source.ruka"
 }
