@@ -21,7 +21,7 @@
     "languages": [{
       "id": "ruka",
       "aliases": ["Ruka", "ruka"],
-      "extensions": [".ruka", ".ra"],
+      "extensions": [".ruka", ".rk"],
       "configuration": "./language-configuration.json"
     }],
     "grammars": [{
