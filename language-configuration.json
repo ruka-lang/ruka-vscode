@@ -10,6 +10,7 @@
     // symbols used as brackets
     "brackets": [
         ["do", "end"],
+        ["<", ">"],
         ["{", "}"],
         ["[", "]"],
         ["(", ")"]
@@ -20,8 +21,7 @@
         ["[", "]"],
         ["(", ")"],
         ["\"", "\""],
-        ["'", "'"],
-        ["`", "`"]
+        ["'", "'"]
     ],
     // symbols that can be used to surround a selection
     "surroundingPairs": [
@@ -29,6 +29,7 @@
         ["do", "else"],
         ["do", "else if"],
         ["begin", "end"],
+        ["<", ">"],
         ["{", "}"],
         ["[", "]"],
         ["(", ")"],
