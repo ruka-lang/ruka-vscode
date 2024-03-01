@@ -120,46 +120,46 @@
                 {
                     "match": "([-])?([[:digit:]][_[:digit:]]*)(?:(\\.)([_[:digit:]]*))?(?:([eE])([\\-\\+])?([[:digit:]][_[:digit:]]*))?(?![bBoOxX])",
                     "captures": {
-                        "1": { "name": "keyword.control.less" },
-                        "2": { "name": "constant.numeric" },
+                        "1": { "name": "keyword.control.less.ruka" },
+                        "2": { "name": "constant.numeric.ruka" },
                         "3": {
-                            "name": "variable.other.class.js variable.interpolation keyword.operator keyword.control message.error"
+                            "name": "variable.interpolation.ruka keyword.operator.ruka keyword.control.ruka message.error.ruka"
                         },
-                        "4": { "name": "constant.numeric" },
-                        "5": { "name": "keyword.control.less" },
-                        "6": { "name": "keyword.control.less" },
-                        "7": { "name": "constant.numeric" }
+                        "4": { "name": "constant.numeric.ruka" },
+                        "5": { "name": "keyword.control.less.ruka" },
+                        "6": { "name": "keyword.control.less.ruka" },
+                        "7": { "name": "constant.numeric.ruka" }
                     }
                 },
                 {
                     "match": "([-])?(0[xX])([[:xdigit:]][_[:xdigit:]]*)(?:(\\.)([_[:xdigit:]]*))?(?:([pP])([\\-\\+])?([[:digit:]][_[:digit:]]*))?",
                     "captures": {
-                        "1": { "name": "keyword.control.less" },
-                        "2": { "name": "keyword.control.less" },
-                        "3": { "name": "constant.numeric" },
+                        "1": { "name": "keyword.control.less.ruka" },
+                        "2": { "name": "keyword.control.less.ruka" },
+                        "3": { "name": "constant.numeric.ruka" },
                         "4": {
                             "name": "variable.other.class.js variable.interpolation keyword.operator keyword.control message.error"
                         },
-                        "5": { "name": "constant.numeric" },
-                        "6": { "name": "keyword.control.less" },
-                        "7": { "name": "keyword.control.less" },
-                        "8": { "name": "constant.numeric" }
+                        "5": { "name": "constant.numeric.ruka" },
+                        "6": { "name": "keyword.control.less.ruka" },
+                        "7": { "name": "keyword.control.less.ruka" },
+                        "8": { "name": "constant.numeric.ruka" }
                     }
                 },
                 {
                     "match": "([-])?(0[oO])([0-7][_0-7]*)",
                     "captures": {
-                        "1": { "name": "keyword.control.less" },
-                        "2": { "name": "keyword.control.less" },
-                        "3": { "name": "constant.numeric" }
+                        "1": { "name": "keyword.control.less.ruka" },
+                        "2": { "name": "keyword.control.less.ruka" },
+                        "3": { "name": "constant.numeric.ruka" }
                     }
                 },
                 {
                     "match": "([-])?(0[bB])([0-1][_0-1]*)",
                     "captures": {
-                        "1": { "name": "keyword.control.less" },
-                        "2": { "name": "keyword.control.less" },
-                        "3": { "name": "constant.numeric" }
+                        "1": { "name": "keyword.control.less.ruka" },
+                        "2": { "name": "keyword.control.less.ruka" },
+                        "3": { "name": "constant.numeric.ruka" }
                     }
                 }
             ]
