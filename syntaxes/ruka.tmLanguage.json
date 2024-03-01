@@ -65,29 +65,21 @@
 		"keywords": {
 			"patterns": [{
 				"name": "keyword.control.ruka",
-				"match": "\\b(if|match|error|while|for|return|fn|record|union|derive|macro|trait|module|defer|inline|break|continue|and|or|not|else|else if|as|when|any|const|let|rec|pub|mut|mov|loc|comptime|static|in|use|impl)\\b"
+				"match": "\\b(if|match|error|while|for|return|fn|record|enum|interface|module|defer|inline|break|continue|and|or|not|else|else if|as|when|any|const|let|rec|pub|mut|mov|loc|comptime|static|in|use|impl)\\b"
 			}]
 		},
         "operators": {
             "patterns": [
                 { "include": "#operator-infix" },
-                { "include": "#operator-prefix" }
+                { "include": "#operator-prefix" },
+                { "include": "#operator-postfilx" }
             ]
         },
         "operators-infix": {
             "patterns": [
                 { 
                     "name": "keyword.operator.infix.ruka",
-                    "match": ";"
-                },
-                { "include": "#operators-infix-assign"}
-            ]
-        },
-        "operators-infix-assign": {
-            "patterns": [
-                {
-                    "name": "keyword.operator.infix.assign.ruka",
-                    "match": "(?<![#\\-:!?.@*/&%^+<=>|~$\\\\])(=)(?![#\\-:!?.@*/&%^+<=>|~$\\\\])"
+                    "match": "\\b(\\|>|<\\||->|=>)"
                 }
             ]
         },
@@ -95,7 +87,15 @@
             "patterns": [
                 {
                     "name": "keyword.operator.prefix.ruka",
-                    "match": ""
+                    "match": "\\b(*|!|and|not|\\||@)"
+                }
+            ]
+        },
+        "operators-postfix": {
+            "patterns": [
+                {
+                   "name": "keyword.operator.postfix.ruka",
+                   "match": ";"
                 }
             ]
         },

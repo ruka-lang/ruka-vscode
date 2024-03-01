@@ -1,7 +1,7 @@
 {
   "name": "ruka-vscode",
-  "displayName": "Warp Programming Language",
-  "description": "Warp Programming Language",
+  "displayName": "Ruka Programming Language",
+  "description": "Ruka Programming Language",
   "version": "0.0.1",
   "homepage": "https://www.ruka-lang.org",
   "respository": {
